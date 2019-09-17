@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Parks api</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>National Parks API</h1>
+    <form id="form">
+        <label for="search-term">Search for multiple parks in a State or States!</label>
+        <input type="text" name="search-term" id="search-term" placeholder="NC,CA..." required>
+
+        <label for="max-results">Maximum results to return</label>
+        <input type="number" name="max-results" id="max-results" value="10">
+
+        <input type="submit" value="Go!">
+    </form>
+    <div id="results" class="hidden"></div>
+    <div id="err-results"></div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
